@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './nav.css';
 
 const NavBar = ({ title, routes }) => (
@@ -13,7 +13,7 @@ const NavBar = ({ title, routes }) => (
       </li>
       {routes.map(
         ({ name, path }) => (
-          <NavLink path={path} name={name} key={path} />
+          <Link to={path} key={name}>{name}</Link>
         ),
       )}
     </ul>

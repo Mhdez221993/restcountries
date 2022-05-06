@@ -11,8 +11,8 @@ function App() {
         <NavBar title="Comic Dance Club" routes={routes} />
         <Routes>
           {routes.map(
-            ({ path, component }) => (
-              <Route key={path} path={path} element={component} />
+            ({ path, component, name }) => (
+              <Route exact path={path} element={component} key={name} />
             ),
           )}
         </Routes>

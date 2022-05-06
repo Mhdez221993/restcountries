@@ -20,8 +20,8 @@ const routes = [
     component: <Sigup />,
   },
   {
-    name: 'All Countries',
-    path: '/all-countries',
+    name: 'Countries',
+    path: '/countries',
     component: <Countries />,
   },
 ];
