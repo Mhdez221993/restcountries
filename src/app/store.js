@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/countries/counterSlice';
+import signin from '../features/sigin/siginSlice';
+import signup from '../features/sigup/signupSlice';
 
 const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    signup,
+    signin,
   },
 });
 

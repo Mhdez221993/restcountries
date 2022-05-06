@@ -1,7 +1,7 @@
 import Countries from '../features/countries/Counter';
 import Game from '../features/game/Counter';
-import Sigin from '../features/sigin/Counter';
-import Sigup from '../features/sigup/Counter';
+import Signin from '../features/sigin/Sigin';
+import Sigup from '../features/sigup/Signup';
 
 const routes = [
   {
@@ -10,9 +10,9 @@ const routes = [
     component: <Game />,
   },
   {
-    name: 'sigin',
-    path: '/sigin',
-    component: <Sigin />,
+    name: 'signin',
+    path: '/signin',
+    component: <Signin />,
   },
   {
     name: 'sigup',

@@ -35,6 +35,8 @@ npx eslint . --fix
 
 - [Create-react-app - ERROR in Plugin "react" was conflicted between ".eslintrc.json" and "BaseConfig"](https://stackoverflow.com/questions/70449712/create-react-app-error-in-plugin-react-was-conflicted-between-eslintrc-jso)
 
+- [NodeJs no 'Access-Control-Allow-Origin'](https://quizdeveloper.com/faq/nodejs-no-access-control-allow-origin-header-is-present-on-the-requested-resour-aid2384)
+
 ## Authors
 
 👤 **Moises Hernandez**
