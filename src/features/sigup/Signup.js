@@ -28,7 +28,7 @@ function Signup() {
     }
     dispatch(signupAsync(state))
       .then((response) => {
-        if (response.payload === 200) {
+        if (response.payload === 'Signp successfully!') {
           navigate('/signin', { replace: true });
         }
       });
