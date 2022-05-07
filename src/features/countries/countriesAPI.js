@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const ORIGINAL_URL = 'https://restcountries.com/v2/all';
-const BASE_URL = 'https://comic-dance-club.herokuapp.com/api/v1/countries';
+const BASE_URL = 'https://restcountries-app.herokuapp.com/api/v1/countries';
 const TOKEN = JSON.parse(localStorage.getItem('token'));
 
 export const fetchCountries = (name = '') => axios
