@@ -1,46 +1,61 @@
-# Getting Started with Create React App and Redux
+# Restcountries
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+This is a React app for a test project.
 
-## Available Scripts
+### [Live demo]()
 
-In the project directory, you can run:
+## Built With
 
-### `npm start`
+- Rails
+- Rspec
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To get a local copy up and running follow these simple example steps.
 
-### `npm test`
+Run in your terminal `git clone git@github.com:Mhdez221993/restcountries.git`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Run some test
 
-### `npm run build`
+```
+rspec spec --format documentation
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Check linters and fix them
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npx stylelint "**/*.{css,scss}" --fix
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npx eslint . --fix
+```
 
-### `npm run eject`
+## Helpful links
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [Create-react-app - ERROR in Plugin "react" was conflicted between ".eslintrc.json" and "BaseConfig"](https://stackoverflow.com/questions/70449712/create-react-app-error-in-plugin-react-was-conflicted-between-eslintrc-jso)
+- [NodeJs no 'Access-Control-Allow-Origin'](https://quizdeveloper.com/faq/nodejs-no-access-control-allow-origin-header-is-present-on-the-requested-resour-aid2384)
+- [Testing a React-Redux app using Jest and Enzyme](https://medium.com/netscape/testing-a-react-redux-app-using-jest-and-enzyme-b349324803a9)
+- [Testing React with Jest and Enzyme](https://medium.com/codeclan/testing-react-with-jest-and-enzyme-20505fec4675)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Authors
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+👤 **Moises Hernandez**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- GitHub: [@Mhdez221993](https://github.com/Mhdez221993)
+- Twitter: [@MoisesH42060050](https://twitter.com/MoisesH42060050)
+- LinkedIn: [Moises Hernandez Coronado](https://www.linkedin.com/in/moises-hernandez-9bbb17145/)
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributions, issues, and feature requests are welcome!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[issues page](https://github.com/Mhdez221993/restcountries/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- To the [jobsqd](https://www.jobsqd.com/) for providing the test project
