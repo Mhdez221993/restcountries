@@ -1,15 +1,16 @@
-import { render } from '@testing-library/react';
+import { shallow } from 'enzyme';
 import React from 'react';
-import { Provider } from 'react-redux';
 import App from './App';
-import store from './store';
+describe('App', () => {
+  it('should render correctly in "debug" mode', () => {
+    const component = shallow(<App debug />);
 
-test('renders learn react link', () => {
-  const { getByText } = render(
-    <Provider store={store}>
-      <App />
-    </Provider>,
-  );
+    expect(component).toMatchSnapshot();
+  });
 
-  expect(getByText(/learn/i)).toBeInTheDocument();
+  it('should render banner text correctly with given strings', () => {
+    const routes = ['one', 'two'];
+    const component = shallow(<App routes={routes} />);
+    expect(component).toMatchSnapshot();
+  });
 });
