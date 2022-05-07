@@ -1,3 +1,4 @@
+/* eslint-disable prefer-const */
 import { shallow } from 'enzyme';
 import React from 'react';
 import { Provider } from 'react-redux';

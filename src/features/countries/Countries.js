@@ -15,8 +15,6 @@ function Countries() {
   };
 
   const handleChange = (e) => {
-    console.log(state);
-
     setState(e.target.value);
     e.preventDefault();
   };
