@@ -1,18 +1,14 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:3001/api/v1/countries/search-all';
+const BASE_URL = 'http://localhost:3001/api/v1/countries';
 const ORIGINAL_URL = 'https://restcountries.com/v2/all';
+const TOKEN = JSON.parse(localStorage.getItem('token'));
 // const BASE_URL = 'https://comic-dance-club.herokuapp.com';
 
-export const fetchCountries = (payload = {}) => axios
-  .get(BASE_URL, payload)
+export const fetchCountries = (name = '') => axios
+  .get(`${BASE_URL}/search-all?query=${name}`, { headers: { Authorization: TOKEN } })
   .then((response) => response.data);
 
 export const fetchAllCountries = () => axios
   .get(ORIGINAL_URL)
-  .then((response) => {
-    const { data } = response;
-    console.log(data);
-    console.log('here');
-    return response.data;
-  });
+  .then((response) => response.data);
