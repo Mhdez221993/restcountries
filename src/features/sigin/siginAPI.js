@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:3001/api/v1/auth/login';
-// const BASE_URL = 'https://comic-dance-club.herokuapp.com';
+const BASE_URL = 'https://comic-dance-club.herokuapp.com/api/v1/auth/login';
 
 const fetchSigin = (payload = {}) => axios
   .post(BASE_URL, payload)
