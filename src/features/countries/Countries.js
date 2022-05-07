@@ -12,6 +12,7 @@ function Countries() {
   const handleSearch = (e) => {
     if (!state.length) {
       dispatch(allCountriesAsync());
+      return;
     }
 
     dispatch(countriesAsync(state));
