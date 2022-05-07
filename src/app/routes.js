@@ -1,5 +1,5 @@
 import Countries from '../features/countries/Countries';
-import Game from '../features/game/Counter';
+import Game from '../features/game/Game';
 import Signin from '../features/sigin/Sigin';
 import Sigup from '../features/sigup/Signup';
 
