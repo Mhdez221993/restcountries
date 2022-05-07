@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render banner text correctly with given strings 1`] = `ShallowWrapper {}`;
+
+exports[`App should render correctly in "debug" mode 1`] = `ShallowWrapper {}`;
+
+exports[`App should render correctly with no props 1`] = `ShallowWrapper {}`;
+
+exports[`MyComponent should render correctly in "debug" mode 1`] = `ShallowWrapper {}`;
