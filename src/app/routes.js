@@ -1,4 +1,4 @@
-import Countries from '../features/countries/Counter';
+import Countries from '../features/countries/Countries';
 import Game from '../features/game/Counter';
 import Signin from '../features/sigin/Sigin';
 import Sigup from '../features/sigup/Signup';

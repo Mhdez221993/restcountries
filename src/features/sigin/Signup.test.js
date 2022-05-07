@@ -6,27 +6,25 @@ import Signin from './Sigin';
 import { setResponse } from './siginSlice';
 
 describe('Signin', () => {
-  const initialState = { output: 10 }
-  const mockStore = configureStore()
-  let store, wrapper
+  const initialState = { output: 10 };
+  const mockStore = configureStore();
+  let store; let
+    wrapper;
 
   beforeEach(() => {
-    store = mockStore(initialState)
-    wrapper = shallow(<Provider store={store}><Signin /></Provider>)
-  })
-
+    store = mockStore(initialState);
+    wrapper = shallow(<Provider store={store}><Signin /></Provider>);
+  });
 
   it('+++ render the connected component', () => {
-    expect(wrapper.find(Signin
-
-    ).length).toEqual(1)
+    expect(wrapper.find(Signin).length).toEqual(1);
   });
 
   it('Check action on dispatching ', () => {
-    let action
+    let action;
     store.dispatch(setResponse(200));
 
     action = store.getActions();
-    expect(action[0].type).toBe("signin/setResponse");
+    expect(action[0].type).toBe('signin/setResponse');
   });
 });

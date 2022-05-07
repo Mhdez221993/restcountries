@@ -4,14 +4,15 @@ import configureStore from 'redux-mock-store';
 import App from './App';
 
 describe('App', () => {
-  const initialState = { state: 200 }
-  const mockStore = configureStore()
-  let store, container
+  const initialState = { state: 200 };
+  const mockStore = configureStore();
+  let store; let
+    container;
 
   beforeEach(() => {
-    store = mockStore(initialState)
-    container = shallow(<App store={store} />)
-  })
+    store = mockStore(initialState);
+    container = shallow(<App store={store} />);
+  });
 
   it('should render correctly in "debug" mode', () => {
     const component = shallow(<App />);
@@ -26,10 +27,10 @@ describe('App', () => {
   });
 
   it('Render the connected(SMART) component', () => {
-    expect(container.length).toEqual(1)
+    expect(container.length).toEqual(1);
   });
 
   it('Check Prop matches with initialState', () => {
-    expect(container.prop('output')).toEqual(initialState.output)
+    expect(container.prop('output')).toEqual(initialState.output);
   });
 });
