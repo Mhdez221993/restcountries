@@ -11,7 +11,8 @@ export const countriesAsync = createAsyncThunk(
   async (name) => {
     const response = await fetchCountries(name);
     // The value we return becomes the `fulfilled` action payload
-    return response;
+    const countries = response.map(({ name }) => ({ name: name.common }));
+    return countries;
   },
 );
 
