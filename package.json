@@ -26,6 +26,9 @@
     "jest": {
       "snapshotSerializers": [
         "enzyme-to-json/serializer"
+      ],
+      "setupFiles": [
+        "./src/setupTests.js"
       ]
     }
   },
@@ -60,6 +63,7 @@
     "eslint-plugin-react": "7.29.x",
     "eslint-plugin-react-hooks": "2.5.x",
     "jest": "^28.1.0",
+    "redux-mock-store": "^1.5.4",
     "stylelint": "13.3.x",
     "stylelint-config-standard": "20.0.x",
     "stylelint-csstree-validator": "^2.0.0",

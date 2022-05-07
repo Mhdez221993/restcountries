@@ -34,8 +34,9 @@ npx eslint . --fix
 ## Helpful links
 
 - [Create-react-app - ERROR in Plugin "react" was conflicted between ".eslintrc.json" and "BaseConfig"](https://stackoverflow.com/questions/70449712/create-react-app-error-in-plugin-react-was-conflicted-between-eslintrc-jso)
-
 - [NodeJs no 'Access-Control-Allow-Origin'](https://quizdeveloper.com/faq/nodejs-no-access-control-allow-origin-header-is-present-on-the-requested-resour-aid2384)
+- [Testing a React-Redux app using Jest and Enzyme](https://medium.com/netscape/testing-a-react-redux-app-using-jest-and-enzyme-b349324803a9)
+- [Testing React with Jest and Enzyme](https://medium.com/codeclan/testing-react-with-jest-and-enzyme-20505fec4675)
 
 ## Authors
 
