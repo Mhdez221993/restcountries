@@ -1,16 +1,23 @@
-import React, { useEffect } from 'react';
-import { Form } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
+import { Button, Form } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { allCountriesAsync, countriesAsync } from './countriesSlice';
 
 function Countries() {
   const dispatch = useDispatch();
   const { countries } = useSelector(({ countries }) => countries);
+  const [state, setState] = useState('');
 
-  const handleKeyDown = (event) => {
-    event.preventDefault();
-    const { value } = event.target;
-    dispatch(countriesAsync(value));
+  const handleSearch = (e) => {
+    dispatch(countriesAsync(state));
+    e.preventDefault();
+  };
+
+  const handleChange = (e) => {
+    console.log(state);
+
+    setState(e.target.value);
+    e.preventDefault();
   };
 
   useEffect(() => {
@@ -28,11 +35,18 @@ function Countries() {
           <Form.Control
             required
             type="text"
-            placeholder="Search"
             name="name"
-            onChange={handleKeyDown}
+            value={state}
+            onChange={handleChange}
           />
         </Form.Group>
+        <Button
+          variant="primary"
+          type="submit"
+          onClick={handleSearch}
+        >
+          Search
+        </Button>
 
       </Form>
 
