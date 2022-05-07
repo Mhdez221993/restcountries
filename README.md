@@ -1,13 +1,26 @@
 # Restcountries
 
-This is a React app for a test project.
+### The home page, you can play with a slot machine, starting with 20 coins given by the house.
+![play-page](https://user-images.githubusercontent.com/67757001/167267550-bf32f792-f98f-4b6b-97be-1a75cf265ec4.PNG)
 
-### [Live demo]()
+### The sign-in page, authenticate the user and save the JWT token and user data in the local storage.
+![sign-in](https://user-images.githubusercontent.com/67757001/167267657-cc81e67e-a40b-48ee-9996-39e4e889d5c7.PNG)
+
+### The sign-up page, register a user and seve it on the a postsgrestsql datatabase
+![sign-up](https://user-images.githubusercontent.com/67757001/167267698-93ab7268-faba-4dda-9d5a-862850451ec9.PNG)
+
+### The countries page, display all the countries, and has an input where you cand write the name of a country and will display a single name or many names depending on the input given.
+![countries](https://user-images.githubusercontent.com/67757001/167267764-ff45c02d-6ac1-466b-b50d-a1f6eee08a64.PNG)
+
+### [Live demo](https://afternoon-depths-87814.herokuapp.com/)
 
 ## Built With
 
-- Rails
-- Rspec
+- React
+- Redux
+- Jest
+- Enzyme
+- Github flow
 
 ## Getting Started
 
@@ -18,7 +31,7 @@ Run in your terminal `git clone git@github.com:Mhdez221993/restcountries.git`
 ## Run some test
 
 ```
-rspec spec --format documentation
+npm test
 ```
 
 ## Check linters and fix them
