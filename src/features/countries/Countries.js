@@ -10,6 +10,10 @@ function Countries() {
   const [state, setState] = useState('');
 
   const handleSearch = (e) => {
+    if (!state.length) {
+      dispatch(allCountriesAsync());
+    }
+
     dispatch(countriesAsync(state));
     e.preventDefault();
   };
