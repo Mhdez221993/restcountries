@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
+import './countries.css';
 import { allCountriesAsync, countriesAsync } from './countriesSlice';
 
 function Countries() {
@@ -28,7 +29,7 @@ function Countries() {
 
   return (
     <div>
-      <Form noValidate>
+      <Form noValidate className="form">
 
         <Form.Group className="mb-3" controlId="formBasicText">
           <Form.Label>Name</Form.Label>
@@ -50,7 +51,7 @@ function Countries() {
 
       </Form>
 
-      <ul>
+      <ul className="countries">
         {countries.map(({ name }) => (<li key={name}>{name}</li>))}
       </ul>
     </div>

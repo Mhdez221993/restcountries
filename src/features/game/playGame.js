@@ -6,6 +6,7 @@ const getSlots = () => {
   ];
 
   const slotes = {};
+  const displaySlotes = [];
 
   for (let i = 0; i < reels.length; i += 1) {
     const ramdom = Math.floor((Math.random() * 7));
@@ -15,10 +16,11 @@ const getSlots = () => {
       slotes[slote] = 0;
     }
 
+    displaySlotes.push(slote);
     slotes[slote] += 1;
   }
 
-  return slotes;
+  return { slotes, displaySlotes };
 };
 
 const getPuntuation = (reels) => {
@@ -46,11 +48,10 @@ const getPuntuation = (reels) => {
 };
 
 const playGame = () => {
-  const reels = getSlots();
-  console.log(reels);
-  const puntuation = getPuntuation(reels);
+  const { slotes, displaySlotes } = getSlots();
+  const puntuation = getPuntuation(slotes);
 
-  return puntuation;
+  return { puntuation, displaySlotes };
 };
 
 export default playGame;

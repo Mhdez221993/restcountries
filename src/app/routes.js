@@ -9,6 +9,12 @@ const routes = [
     path: '/',
     component: <Game />,
   },
+
+  {
+    name: 'Countries',
+    path: '/countries',
+    component: <Countries />,
+  },
   {
     name: 'Signin',
     path: '/signin',
@@ -18,11 +24,6 @@ const routes = [
     name: 'Signup',
     path: '/signup',
     component: <Signup />,
-  },
-  {
-    name: 'Countries',
-    path: '/countries',
-    component: <Countries />,
   },
 ];
 

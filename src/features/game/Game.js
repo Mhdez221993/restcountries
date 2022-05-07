@@ -1,11 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import './game.css';
 import { decrement, increment, reset } from './gameSlice';
 import playGame from './playGame';
 
 function Game() {
   const dispatch = useDispatch();
   const { coins } = useSelector(({ game }) => game);
+  const [state, setState] = useState([]);
 
   useEffect(() => {
     if (coins === 0) dispatch(reset(20));
@@ -13,19 +15,27 @@ function Game() {
 
   const handleGame = () => {
     dispatch(decrement());
-    const result = playGame();
-    if (result) {
-      dispatch(increment(result));
+    const { puntuation, displaySlotes } = playGame();
+    setState(displaySlotes);
+    if (puntuation) {
+      dispatch(increment(puntuation));
     }
   };
 
   return (
-    <div>
-      <h1>Game</h1>
-      <h2>{coins}</h2>
+    <div className="game">
+      <h1>WIN</h1>
+      <div className="coins">{coins}</div>
+      <div className="reel">
+        {state.map((v, i) => {
+          const key = `${v}${i}`;
+          return (<span key={key}>{v}</span>);
+        })}
+      </div>
       <button
         type="button"
         onClick={handleGame}
+        className="play"
       >
         Play
       </button>

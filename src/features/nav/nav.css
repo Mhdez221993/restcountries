@@ -1,10 +1,7 @@
 .nav-list {
   display: flex;
-  padding: 10px;
-}
-
-a:link {
-  text-decoration: none;
+  padding: 10px 0;
+  margin-bottom: 50px;
 }
 
 .Restcountries{
@@ -19,10 +16,10 @@ a:link {
 }
 
 .Signup {
-  margin-right: 30px;
   color: rgb(13, 86, 134)
 }
 
 .Countries {
+  margin-right: 30px;
   color: rgb(13, 86, 134)
 }
